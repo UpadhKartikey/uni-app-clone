@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css');
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.5,
+  6: $spacer * 3,
+  7: $spacer * 6,
+  8: $spacer * 8
+);
+
+$font-size-base: 1rem !default;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+$h7-font-size: $font-size-base * 0.75;
+$h8-font-size: $font-size-base * 0.625;
+$h9-font-size: $font-size-base * 0.5;
+
+$font-sizes: (
+  1: $h1-font-size,
+  2: $h2-font-size,
+  3: $h3-font-size,
+  4: $h4-font-size,
+  5: $h5-font-size,
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size
+);
+
+$primary: #f5821e;
+$secondary: #e46d47;
+$success: #1b8b26;
+$danger: #c62c2c;
+$info: #053b6d;
+$warning: #cab64c;
+$light: #f2f6fb;
+$dark: #3a3a3a;
+$white: #ffffff;
+$lavender: #6368bd;
+$paleorange: #fef4eb;
+$palegreen: #e5efe6;
+$palelavender: #d4e3fd;
+$lightpurple: #eef3fd;
+$paledanger: #ffd9d7;
+$palewarning: #fff3c7;
+$paleinfo: #fff5ec;
+$paleviolet: #f3edff;
+$disabledgrey: #c8c5c5;
+$unigreen: rgba(90, 214, 196);
+$darkblack: #000000;
+
+$body-color: $dark;
+$enable-validation-icons: false;
+
+// Input Control Overrides
+$input-border-color: $light;
+$input-border-radius-lg: 0.5rem;
+// $input-line-height: 1;
+$input-bg: $light;
+$input-font-size-lg: 14px;
+$input-focus-bg: $white;
+$input-btn-focus-width: 0.125rem;
+$input-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(98, 0, 238, 0.2);
+$input-focus-border-color: $lavender;
+$input-padding-y-lg: 0.875rem;
+$input-padding-x-lg: 0.75rem;
+$input-disabled-border-color: #e8e8e8;
+$input-disabled-bg: #e8e8e8;
+$input-placeholder-color: #7f889f;
+
+$form-select-focus-box-shadow: 0 0 0 $input-btn-focus-width rgba(98, 0, 238, 0.2);
+
+$border-color: #eeeff4;
+
+$btn-font-size-sm: 0.75rem;
+$btn-font-size-lg: 1rem;
+
+$font-family-open-sans: 'Open Sans';
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue',
+  Arial, 'Noto Sans', sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+  'Noto Color Emoji' !default;
+
+$font-family-base: $font-family-open-sans, $font-family-sans-serif;
+
+$theme-colors: () !default;
+$theme-colors: map-merge(
+  (
+    'primary': $primary,
+    'secondary': $secondary,
+    'success': $success,
+    'info': $info,
+    'warning': $warning,
+    'danger': $danger,
+    'light': $light,
+    'dark': $dark,
+    'lavender': $lavender,
+    'paleorange': $paleorange,
+    'palegreen': $palegreen,
+    'palelavender': $palelavender,
+    'offwhite': $white,
+    'lightpurple': $lightpurple,
+    'paledanger': $paledanger,
+    'palewarning': $palewarning,
+    'paleinfo': $paleinfo,
+    'paleviolet': $paleviolet,
+    'disabledgrey': $disabledgrey,
+    'unigreen': $unigreen,
+    'darkblack': $darkblack
+  ),
+  $theme-colors
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1366px,
+  xxl: 1366px
+) !default;
+
+$component-active-bg: $dark;
+$text-muted: #7f889f;
+
+@import '~bootstrap/scss/bootstrap';
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.side-panel {
+  right: 0;
+  top: 48px;
+  z-index: 1;
+}
+
+@keyframes GradientSlideAnimation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100vw 0;
+  }
+}
+
+.btn-primary {
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+.btn-outline-primary {
+  &:hover {
+    color: $white;
+  }
+}
